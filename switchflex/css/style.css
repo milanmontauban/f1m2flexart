@@ -1,0 +1,164 @@
+/*Alles word hiermee geselecteerd (alle tekst)*/
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /*Boven aan begint bij blauw daarna naar rood onderaan <-- dit herhaalt */
+  /*90deg zorgt ervoor dat het recht word*/
+  /*  background: linear-gradient(90deg, green 50%, #ff4554 50%);
+  /*Door dit krijgt het kleur verloop*/
+ /* min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switchLogo{
+    display:flex;
+    gap:20px;
+}
+/*Alles wat je hier doet veranderd alleen de 
+   <figgure class="switchLogo">*/
+/* .joycon{
+    width: 90px;
+    height: 210px;
+    position: relative;
+    
+}
+.joycon--left{
+    background: green;
+     /*Hiermee snijd je de randen af top: bovenkant bottom: onderkant*/
+   /*  border-top-left-radius: 50px;
+     border-bottom-left-radius:50px;
+     /*De rand om je joystick heen*/
+/*    border: 15px solid white; 
+}
+.joycon--right{
+    background: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: click;
+    animation-duration: 10s;
+}
+/*Hiermee maak je een rondje*/
+/* .stick{
+    width: 38px;
+    height: 38px;
+    /*Maakt het rode punt rond*/
+  /*  border-radius: 50%;
+    position: absolute;
+    /*-% naar beneden*/
+   /* left: 50%;
+    transform:translateX(-50%);
+}
+.stick--left{
+    background: white;
+    top: 15%;
+}
+.stick--right{
+    top: 50%;
+    background: #FF4554;
+}
+@keyframes click {
+    0%{
+       transform: translateY(-80px);
+    }
+    98%{
+        transform: translateY(20px);
+    }
+    100%{
+        background: transLateY(0px);
+    }
+}
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,green 50%,#FF4554 50%);
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switchLogo{
+    display:flex;
+    gap: 20px;
+}
+
+.joycon{
+    width: 90px;
+    height: 210px;
+    position:relative;
+}
+
+.joycon--left{
+    background:green;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 15px solid white;
+    animation-name: click--left;
+    animation-duration: 2.5s;
+}
+
+.joycon--right{
+    background:white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: click--right;
+    animation-duration:2.5s; 
+}
+
+.stick{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.stick--left{
+    background: white;
+    top:15%;
+}
+
+.stick--right{
+    top:50%;
+    background: #FF4554;
+}
+@keyframes click--left {
+    0%{
+        transform: translateY(0px);
+    }
+    93%{
+        transform: translateY(0px);
+    }
+    98%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes click--right {
+    0%{
+        transform: translateY(-80px);
+    }
+    93%{
+        transform: translateY(-80px);
+    }
+    98%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
